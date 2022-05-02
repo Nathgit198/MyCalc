@@ -1,0 +1,14 @@
+{
+  "name": "mycalc",
+  "version": "1.0.0",
+  "description": "Instalação",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  }
+}
