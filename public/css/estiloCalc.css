@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgba(228, 205, 205, 0.589);
+}
+
+.calculadora {
+    width: 350px;
+    height: 500px;
+    background: #eeeeee;
+    position: fixed;
+    border-radius: 20px;
+/*     margin: 1rem; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+    font-size: 23px;
+}
+.calc {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#resultado {
+    width: 100%;
+    height: 111px;
+    background: linear-gradient(90deg, #96998b, #dde0cb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;  
+    box-shadow: inset 0px 0px 6px #00000047;
+}
+#resultCalc {
+    position: absolute;
+    top: 63px;
+/*     left: 107px; */
+    width: 100%;
+    max-width: 210px;
+    height: 40px;
+    font-size: 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+.painelCal {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 70px);
+    align-content: center;
+    grid-template-rows: minmax(50px, auto) repeat(4, 50px);
+}
+.painelCal > button {
+    outline: none;
+    font-size: 1.5rem;
+    border: none;
+    padding: 10px;
+    margin: 1px;
+    cursor: pointer;
+    background: linear-gradient(120deg, #000000c7 -18%, #4e4e4ecf 87%);
+    width: 100%;
+    margin: 0 auto;
+}
+.botaoDel, .botaoZero {
+    grid-column: span 2;
+}
